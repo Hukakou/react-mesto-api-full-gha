@@ -1,0 +1,14 @@
+.user__menu-btn{
+    padding: 0;
+    background-color: #000000;
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.user__menu-btn:hover{
+    opacity: 0.6;
+}
