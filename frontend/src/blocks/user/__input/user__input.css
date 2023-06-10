@@ -1,0 +1,15 @@
+.user__input{
+    display: block;
+    padding-bottom: 7px;
+    margin: 0 auto;
+    width: 358px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    border-bottom: 2px #CCCCCC solid;
+    outline: none
+}

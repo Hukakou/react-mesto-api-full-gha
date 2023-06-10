@@ -1,0 +1,7 @@
+.pop-up__img-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    position: relative;
+    max-height: 90vh;
+}

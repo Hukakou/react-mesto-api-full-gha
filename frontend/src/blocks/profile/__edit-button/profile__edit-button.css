@@ -1,0 +1,27 @@
+.profile__edit-button {
+    padding: 0;
+    margin: 37px 30px 0 0px;
+    background-image: url(../../../images/kapand.svg);
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: 50% 50%;
+    background-size: 10px 10px;
+    border: 1px solid #FFFFFF;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.profile__edit-button:hover{
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 680px) {
+    .profile__edit-button {
+        width: 18px;
+        height: 18px;
+        margin: 8px 0 0 0;
+        background-size: 7.5px 7.5px;
+    }
+}
