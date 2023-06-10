@@ -119,7 +119,7 @@ const updateAvatar = (req, res, next) => {
       if (!user) {
         next(new NotFoundError('Пользователь не найден'));
       }
-      res.status(HTTP_STATUS_OK).send({ avatar });
+      res.status(HTTP_STATUS_OK).send({ data: user });
     })
     .catch((err) => handleError(err, next));
 };

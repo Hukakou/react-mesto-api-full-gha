@@ -80,7 +80,7 @@ function App() {
     api
       .patchProfileInfo(obj.name, obj.about)
       .then((res) => {
-        setCurrentUser(res);
+        setCurrentUser(res.data);
         closeAllPopups();
       })
       .catch((err) => {
@@ -109,9 +109,9 @@ function App() {
     if (token) {
       authorize(token)
         .then((data) => {
-          if (data.data.email) {
+          if (data.email) {
             setLoggedIn(true);
-            setAuthUser(data.data);
+            setAuthUser(data);
             navigate("/", { replace: true });
           }
         })
@@ -121,7 +121,7 @@ function App() {
 
   //Проверка на наличие лайка и запрос на обновлённые данные карточки
   function handleCardLike(card) {
-    const isLiked = card.likes.some((i) => i._id === currentUser._id);
+    const isLiked = card.likes.some((i) => i.join('') === currentUser._id);
 
     api
       .changeLikeCardStatus(card._id, !isLiked)
@@ -149,8 +149,8 @@ function App() {
   function handleUpdateAvatar(newAvatar) {
     api
       .patchProfileAvatar(newAvatar.avatar)
-      .then((newAvatar) => {
-        setCurrentUser(newAvatar);
+      .then((avatar) => {
+        setCurrentUser(avatar.data);
         closeAllPopups();
       })
       .catch((err) => {
