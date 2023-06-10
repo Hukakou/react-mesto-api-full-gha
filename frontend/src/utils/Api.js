@@ -121,7 +121,7 @@ export default class Api {
 }
 
 export const api = new Api({
-  baseUrl: "http://localhost:3000",
+  baseUrl: "https://api.hukakou.nomoredomains.rocks",
   headers: {
     // authorization: "885318d6-d19f-4157-94c3-3c974e90ff3d",
     "Content-Type": "application/json",
