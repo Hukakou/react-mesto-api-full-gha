@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 51.250.89.190
+IP 51.250.89.190
 
 Frontend https://hukakou.nomoredomains.rocks
 
